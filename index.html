@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nutrifit | Cristóbal Díaz - Nutricionista Clínico y Deportivo</title>
+<meta name="description" content="Nutrifit, con el nutricionista Cristóbal Díaz. Planes de alimentación personalizados, control de peso y nutrición deportiva. Agenda tu hora online hoy.">
+
+<!-- Open Graph / redes sociales (WhatsApp, Instagram, Facebook, LinkedIn) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Nutrifit">
+<meta property="og:title" content="Nutrifit | Cristóbal Díaz - Nutricionista Clínico y Deportivo">
+<meta property="og:description" content="Planes de alimentación personalizados, control de peso y nutrición deportiva. Agenda tu hora online hoy.">
+<meta property="og:image" content="https://www.nutrifit.cl/img/nutrifit-logo-oscuro.png">
+<meta property="og:url" content="https://www.nutrifit.cl/">
+<meta property="og:locale" content="es_CL">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Nutrifit | Cristóbal Díaz - Nutricionista Clínico y Deportivo">
+<meta name="twitter:description" content="Planes de alimentación personalizados, control de peso y nutrición deportiva. Agenda tu hora online hoy.">
+<meta name="twitter:image" content="https://www.nutrifit.cl/img/nutrifit-logo-oscuro.png">
+
+<!-- Fuentes -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Librería de animaciones al hacer scroll -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+<!-- Estilos propios -->
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-cream-50 text-navy-800 antialiased">
+
+<!-- ============ NAVBAR ============ -->
+<header id="navbar" class="fixed top-0 left-0 w-full z-50 bg-transparent">
+  <nav class="max-w-7xl mx-auto px-6 lg-px-10 flex items-center justify-between py-5">
+    <a href="#inicio" class="flex items-center gap-3">
+      <!-- Logo Nutrifit -->
+      <img src="img/nutrifit-logo-oscuro.png" alt="Nutrifit" class="w-9 h-9" style="border-radius:50%;">
+      <span class="font-display text-2xl font-semibold text-navy-800 leading-none">Nutrifit</span>
+    </a>
+
+    <ul class="hidden md-flex items-center gap-9 font-medium text-navy-700">
+      <li><a href="#sobre-mi" class="hover-text-clay-600 transition-colors">Sobre mí</a></li>
+      <li><a href="#servicios" class="hover-text-clay-600 transition-colors">Servicios</a></li>
+      <li><a href="#testimonios" class="hover-text-clay-600 transition-colors">Testimonios</a></li>
+      <li><a href="#contacto" class="hover-text-clay-600 transition-colors">Contacto</a></li>
+    </ul>
+
+    <a href="#agenda" class="hidden md-inline-block btn-cta bg-clay-600 text-cream-50 font-semibold px-6 py-2.5 rounded-full text-sm">
+      Reserva tu hora
+    </a>
+
+    <button id="hamburgerBtn" class="hamburger md-hidden flex flex-col justify-center items-center w-9 h-9 gap-1.5" aria-label="Abrir menú">
+      <span class="bar bar1 block w-7 h-0.5 bg-navy-700 rounded"></span>
+      <span class="bar bar2 block w-7 h-0.5 bg-navy-700 rounded"></span>
+      <span class="bar bar3 block w-7 h-0.5 bg-navy-700 rounded"></span>
+    </button>
+  </nav>
+
+  <div id="mobileMenu" class="md-hidden overflow-hidden max-h-0 opacity-0 bg-cream-50 border-t border-sage-100">
+    <ul class="flex flex-col gap-1 px-6 py-4 font-medium text-navy-700">
+      <li><a href="#sobre-mi" class="block py-2.5 hover-text-clay-600">Sobre mí</a></li>
+      <li><a href="#servicios" class="block py-2.5 hover-text-clay-600">Servicios</a></li>
+      <li><a href="#testimonios" class="block py-2.5 hover-text-clay-600">Testimonios</a></li>
+      <li><a href="#contacto" class="block py-2.5 hover-text-clay-600">Contacto</a></li>
+      <li class="pt-2">
+        <a href="#agenda" class="block text-center btn-cta bg-clay-600 text-cream-50 font-semibold px-6 py-2.5 rounded-full text-sm">Reserva tu hora</a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section id="inicio" class="relative pt-40 pb-24 md-pt-52 md-pb-32 overflow-hidden bg-sage-50">
+  <div class="absolute hero-offset-top hero-blob-1 bg-sage-200-60 blob"></div>
+  <div class="absolute bottom-0 hero-offset-bottom hero-blob-2 bg-clay-100 blob-2"></div>
+
+  <div class="relative max-w-7xl mx-auto px-6 lg-px-10 grid md-grid-cols-2 gap-14 items-center">
+    <div data-aos="fade-up">
+      <span class="inline-block bg-clay-100 text-clay-700 font-semibold text-sm px-4 py-1.5 rounded-full mb-6">
+        Nutrición Clínica &amp; Deportiva
+      </span>
+      <h1 class="font-display text-4xl md-text-6xl hero-title font-semibold text-navy-800 mb-6">
+        Recupera tu energía, tu peso y tu relación con la comida.
+      </h1>
+      <p class="text-lg text-navy-700-80 mb-9 max-w-lg">
+        Somos Nutrifit, de la mano del nutricionista Cristóbal Díaz. Diseñamos planes de alimentación reales, sostenibles y basados en evidencia — pensados para tu cuerpo, tu rutina y tus objetivos, no para una dieta genérica.
+      </p>
+      <div class="flex flex-col sm-flex-row gap-4">
+        <a href="#agenda" class="btn-cta bg-clay-600 text-cream-50 font-semibold px-8 py-4 rounded-full text-center">
+          Reserva tu hora aquí
+        </a>
+        <a href="#servicios" class="font-semibold px-8 py-4 rounded-full text-center border-2 border-sage-300 text-navy-700 hover-bg-sage-100 transition-colors">
+          Ver servicios
+        </a>
+      </div>
+      <div class="flex items-center gap-8 mt-10 text-sm text-navy-700-70">
+        <div><span class="font-display text-2xl font-semibold text-navy-800">+500</span><br>pacientes atendidos</div>
+        <div><span class="font-display text-2xl font-semibold text-navy-800">100%</span><br>planes personalizados</div>
+      </div>
+    </div>
+
+    <div data-aos="fade-left" data-aos-delay="150" class="relative">
+      <div class="hero-image-box bg-sage-200 blob overflow-hidden shadow-2xl shadow-soft-sage flex items-center justify-center">
+        <!--
+          ============================================================
+          ESPACIO PARA EL AVATAR / FOTO DE CRISTÓBAL
+          Ahora mismo hay una ILUSTRACIÓN GENÉRICA (no es una foto real
+          ni un avatar de una persona real). Para poner el avatar real
+          de Cristóbal (ej. creado en Zepeto, Bitmoji 3D, Ready Player Me,
+          etc. como en el ejemplo que enviaste):
+          1. Pide a Cristóbal que genere su avatar en la app que prefiera.
+          2. Descárgalo como PNG con fondo transparente.
+          3. Súbelo a este proyecto (ej. carpeta "assets/") y reemplaza
+             todo este bloque <svg>...</svg> por:
+             <img src="assets/avatar-cristobal.png" alt="Cristóbal Díaz" class="w-full h-full object-cover">
+          ============================================================
+        -->
+        <svg viewBox="0 0 400 500" class="w-full h-full">
+          <rect width="400" height="500" fill="#cddbc7"/>
+          <circle cx="200" cy="185" r="95" fill="#e2a679"/>
+          <path d="M110 175c0-70 45-115 90-115s90 45 90 115c0 10-3 20-8 28-10-45-40-70-82-70s-72 25-82 70c-5-8-8-18-8-28z" fill="#3c2a1e"/>
+          <ellipse cx="165" cy="185" rx="7" ry="9" fill="#2b1c12"/>
+          <ellipse cx="235" cy="185" rx="7" ry="9" fill="#2b1c12"/>
+          <path d="M180 220q20 14 40 0" stroke="#2b1c12" stroke-width="4" fill="none" stroke-linecap="round"/>
+          <path d="M130 235c-10 45 5 70 70 75s80-30 70-75c-10 40-30 55-70 55s-60-15-70-55z" fill="#2b1c12"/>
+          <path d="M85 500c5-95 55-150 115-150s110 55 115 150z" fill="#4a6b40"/>
+        </svg>
+      </div>
+      <div class="absolute card-offset-bottom bg-cream-50 rounded-2xl shadow-xl px-6 py-4 hidden sm-block">
+        <p class="font-display font-semibold text-navy-800">Cristóbal Díaz</p>
+        <p class="text-sm text-clay-600">Nutricionista &middot; Nutrifit</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SOBRE MÍ ============ -->
+<section id="sobre-mi" class="py-24 md-py-32 bg-cream-50">
+  <div class="max-w-7xl mx-auto px-6 lg-px-10 grid md-grid-cols-2 gap-16 items-center">
+    <div data-aos="fade-right" class="order-2 md-order-1">
+      <div class="grid grid-cols-2 gap-4">
+        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?q=80&w=800&auto=format&fit=crop" class="rounded-2xl object-cover h-56 w-full" alt="Alimentos saludables frescos" loading="lazy" width="800" height="600">
+        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=800&auto=format&fit=crop" class="rounded-2xl object-cover h-56 w-full mt-8" alt="Consulta nutricional personalizada" loading="lazy" width="800" height="600">
+      </div>
+    </div>
+    <div data-aos="fade-left" class="order-1 md-order-2">
+      <span class="text-clay-600 font-semibold tracking-wide uppercase text-sm">Sobre nosotros</span>
+      <h2 class="font-display text-3xl md-text-4xl font-semibold text-navy-800 mt-3 mb-6">
+        La nutrición no es restricción, es información.
+      </h2>
+      <p class="text-navy-700-80 mb-5">
+        Somos Nutrifit. Detrás de la marca está Cristóbal Díaz, Nutricionista, quien lleva años acompañando a personas que buscan algo más que "bajar de peso": buscan entender su cuerpo, recuperar energía y construir hábitos que se mantengan en el tiempo.
+      </p>
+      <p class="text-navy-700-80 mb-8">
+        Nuestro enfoque es integral: combinamos evidencia científica actualizada con un trabajo cercano y sin juicios. Cada plan nace de tu historia clínica, tus gustos, tu rutina y tus metas reales — no de una plantilla genérica.
+      </p>
+      <div class="grid grid-cols-2 gap-6">
+        <div class="border-l-4 border-clay-400 pl-4">
+          <p class="font-display font-semibold text-navy-800">Enfoque</p>
+          <p class="text-sm text-navy-700-70">Nutrición basada en evidencia</p>
+        </div>
+        <div class="border-l-4 border-clay-400 pl-4">
+          <p class="font-display font-semibold text-navy-800">Método</p>
+          <p class="text-sm text-navy-700-70">Planes 100% personalizados</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICIOS ============ -->
+<section id="servicios" class="py-24 md-py-32 bg-sage-50">
+  <div class="max-w-7xl mx-auto px-6 lg-px-10">
+    <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+      <span class="text-clay-600 font-semibold tracking-wide uppercase text-sm">Servicios</span>
+      <h2 class="font-display text-3xl md-text-4xl font-semibold text-navy-800 mt-3">
+        Un plan para cada objetivo
+      </h2>
+      <p class="text-navy-700-80 mt-4">Atención presencial y online, adaptada a lo que necesitas hoy.</p>
+    </div>
+
+    <div class="grid sm-grid-cols-2 lg-grid-cols-3 gap-8">
+
+      <div class="service-card bg-cream-50 border-2 border-transparent rounded-3xl p-8" data-aos="fade-up" data-aos-delay="0">
+        <div class="w-14 h-14 bg-clay-100 rounded-2xl flex items-center justify-center mb-6 text-2xl">🥗</div>
+        <h3 class="font-display text-xl font-semibold text-navy-800 mb-3">Planes Personalizados</h3>
+        <p class="text-navy-700-75 mb-6">Alimentación diseñada según tu historia clínica, gustos y estilo de vida — sin dietas rígidas ni prohibiciones absolutas.</p>
+        <a href="#agenda" class="font-semibold text-clay-600 hover-text-clay-700 transition-colors">Reservar sesión →</a>
+      </div>
+
+      <div class="service-card bg-cream-50 border-2 border-transparent rounded-3xl p-8" data-aos="fade-up" data-aos-delay="100">
+        <div class="w-14 h-14 bg-clay-100 rounded-2xl flex items-center justify-center mb-6 text-2xl">⚖️</div>
+        <h3 class="font-display text-xl font-semibold text-navy-800 mb-3">Control de Peso</h3>
+        <p class="text-navy-700-75 mb-6">Acompañamiento gradual y sostenible para bajar, subir o mantener tu peso, con seguimiento continuo de resultados.</p>
+        <a href="#agenda" class="font-semibold text-clay-600 hover-text-clay-700 transition-colors">Reservar sesión →</a>
+      </div>
+
+      <div class="service-card bg-cream-50 border-2 border-transparent rounded-3xl p-8" data-aos="fade-up" data-aos-delay="200">
+        <div class="w-14 h-14 bg-clay-100 rounded-2xl flex items-center justify-center mb-6 text-2xl">🏃</div>
+        <h3 class="font-display text-xl font-semibold text-navy-800 mb-3">Nutrición Deportiva</h3>
+        <p class="text-navy-700-75 mb-6">Optimiza tu rendimiento, recuperación y composición corporal con estrategias nutricionales para deportistas.</p>
+        <a href="#agenda" class="font-semibold text-clay-600 hover-text-clay-700 transition-colors">Reservar sesión →</a>
+      </div>
+
+      <div class="service-card bg-cream-50 border-2 border-transparent rounded-3xl p-8" data-aos="fade-up" data-aos-delay="0">
+        <div class="w-14 h-14 bg-clay-100 rounded-2xl flex items-center justify-center mb-6 text-2xl">🩺</div>
+        <h3 class="font-display text-xl font-semibold text-navy-800 mb-3">Nutrición Clínica</h3>
+        <p class="text-navy-700-75 mb-6">Manejo nutricional de condiciones como diabetes, resistencia a la insulina, hipertensión y patologías digestivas.</p>
+        <a href="#agenda" class="font-semibold text-clay-600 hover-text-clay-700 transition-colors">Reservar sesión →</a>
+      </div>
+
+      <div class="service-card bg-cream-50 border-2 border-transparent rounded-3xl p-8" data-aos="fade-up" data-aos-delay="100">
+        <div class="w-14 h-14 bg-clay-100 rounded-2xl flex items-center justify-center mb-6 text-2xl">🌱</div>
+        <h3 class="font-display text-xl font-semibold text-navy-800 mb-3">Alimentación Basada en Plantas</h3>
+        <p class="text-navy-700-75 mb-6">Transiciones vegetarianas o veganas bien planificadas, cuidando cada nutriente clave para tu salud.</p>
+        <a href="#agenda" class="font-semibold text-clay-600 hover-text-clay-700 transition-colors">Reservar sesión →</a>
+      </div>
+
+      <div class="service-card bg-cream-50 border-2 border-transparent rounded-3xl p-8" data-aos="fade-up" data-aos-delay="200">
+        <div class="w-14 h-14 bg-clay-100 rounded-2xl flex items-center justify-center mb-6 text-2xl">💻</div>
+        <h3 class="font-display text-xl font-semibold text-navy-800 mb-3">Consultas Online</h3>
+        <p class="text-navy-700-75 mb-6">Todo el acompañamiento profesional desde donde estés, con seguimiento por videollamada y mensajería.</p>
+        <a href="#agenda" class="font-semibold text-clay-600 hover-text-clay-700 transition-colors">Reservar sesión →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIOS ============ -->
+<section id="testimonios" class="py-24 md-py-32 bg-cream-50">
+  <div class="max-w-7xl mx-auto px-6 lg-px-10">
+    <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+      <span class="text-clay-600 font-semibold tracking-wide uppercase text-sm">Testimonios</span>
+      <h2 class="font-display text-3xl md-text-4xl font-semibold text-navy-800 mt-3">
+        Resultados que hablan por sí solos
+      </h2>
+    </div>
+
+    <div class="grid md-grid-cols-3 gap-8">
+      <div class="testimonial-card bg-sage-50 rounded-3xl p-8" data-aos="fade-up" data-aos-delay="0">
+        <div class="flex gap-1 text-clay-500 mb-4">★★★★★</div>
+        <p class="text-navy-700-85 mb-6">"Después de años probando dietas que no funcionaban, Cristóbal me ayudó a entender mi cuerpo. Bajé de peso sin sentir que me estaba privando de nada."</p>
+        <p class="font-display font-semibold text-navy-800">Javiera M.</p>
+        <p class="text-sm text-navy-700-60">Paciente desde 2024</p>
+      </div>
+
+      <div class="testimonial-card bg-sage-50 rounded-3xl p-8" data-aos="fade-up" data-aos-delay="100">
+        <div class="flex gap-1 text-clay-500 mb-4">★★★★★</div>
+        <p class="text-navy-700-85 mb-6">"Como corredor amateur, necesitaba ajustar mi alimentación para competir mejor. El plan deportivo de Cristóbal marcó la diferencia en mis tiempos y recuperación."</p>
+        <p class="font-display font-semibold text-navy-800">Ignacio R.</p>
+        <p class="text-sm text-navy-700-60">Paciente desde 2023</p>
+      </div>
+
+      <div class="testimonial-card bg-sage-50 rounded-3xl p-8" data-aos="fade-up" data-aos-delay="200">
+        <div class="flex gap-1 text-clay-500 mb-4">★★★★★</div>
+        <p class="text-navy-700-85 mb-6">"Me diagnosticaron resistencia a la insulina y no sabía por dónde empezar. Cristóbal me explicó todo con paciencia y hoy mis exámenes están muchísimo mejor."</p>
+        <p class="font-display font-semibold text-navy-800">Carolina S.</p>
+        <p class="text-sm text-navy-700-60">Paciente desde 2024</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AGENDA / CTA BANDA ============ -->
+<section id="agenda" class="py-20 bg-navy-700">
+  <div class="max-w-4xl mx-auto px-6 text-center" data-aos="zoom-in">
+    <h2 class="font-display text-3xl md-text-4xl font-semibold text-cream-50 mb-4">
+      Tu próxima versión empieza con una conversación.
+    </h2>
+    <p class="text-cream-100-80 mb-9 max-w-xl mx-auto">
+      Agenda tu primera hora con Cristóbal Díaz y da el primer paso hacia un cambio real y sostenible.
+    </p>
+
+    <!--
+      Link de reservas de AgendaPro ya integrado (Nutrifit).
+      target="_blank" abre AgendaPro en una pestaña nueva sin que
+      el usuario pierda esta landing page.
+    -->
+    <a id="agendaProBtn" href="https://nutrifit.site.agendapro.com/cl" target="_blank" rel="noopener"
+       class="btn-cta inline-block bg-clay-500 text-navy-900 font-bold px-10 py-4 rounded-full text-lg">
+      Agenda tu cita en AgendaPro
+    </a>
+
+    <!--
+      ALTERNATIVA: iframe embebido de AgendaPro (calendario dentro de la página)
+      Descomenta y pega la URL de embed que AgendaPro entrega en
+      "Reserva Online" → "Insertar en mi sitio web".
+
+      <div class="mt-10 rounded-3xl overflow-hidden shadow-2xl bg-cream-50">
+        <iframe src="https://agendapro.com/embed/TU-LINK-AQUI" width="100%" height="700" frameborder="0" title="Agenda tu hora con Nutrifit"></iframe>
+      </div>
+    -->
+  </div>
+</section>
+
+<!-- ============ FORMULARIO DE CONTACTO ============ -->
+<section id="contacto" class="py-24 md-py-32 bg-sage-50">
+  <div class="max-w-3xl mx-auto px-6 lg-px-10">
+    <div class="text-center mb-14" data-aos="fade-up">
+      <span class="text-clay-600 font-semibold tracking-wide uppercase text-sm">Contacto</span>
+      <h2 class="font-display text-3xl md-text-4xl font-semibold text-navy-800 mt-3 mb-4">
+        Escríbenos y conversemos
+      </h2>
+      <p class="text-navy-700-80">¿Tienes dudas antes de agendar? Déjanos tus datos y Cristóbal te contactará personalmente.</p>
+    </div>
+
+    <!--
+      ============================================================
+      INTEGRACIÓN FORMSPREE — PASO A PASO
+      1. Crea una cuenta gratis en https://formspree.io
+      2. Crea un formulario nuevo y pon como email de destino el correo
+         de Cristóbal (así le llegará cada mensaje directo a su bandeja).
+      3. Formspree te entrega un endpoint como:
+         https://formspree.io/f/xxxxabcd
+      4. Reemplaza "TU_ENDPOINT_DE_FORMSPREE" en el atributo
+         data-endpoint de este <form> por ese valor completo.
+      ============================================================
+    -->
+    <form id="contactForm" data-endpoint="https://formspree.io/f/xqevorbo"
+          class="bg-cream-50 rounded-3xl shadow-xl shadow-soft-sage p-8 md-p-12 grid gap-6" data-aos="fade-up" data-aos-delay="100">
+      <div>
+        <label for="nombre" class="block font-semibold text-navy-800 mb-2">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required
+               class="w-full border-2 border-sage-200 rounded-xl px-4 py-3 bg-white transition-shadow"
+               placeholder="Tu nombre completo">
+      </div>
+      <div>
+        <label for="correo" class="block font-semibold text-navy-800 mb-2">Correo electrónico</label>
+        <input type="email" id="correo" name="correo" required
+               class="w-full border-2 border-sage-200 rounded-xl px-4 py-3 bg-white transition-shadow"
+               placeholder="tucorreo@ejemplo.com">
+      </div>
+      <div>
+        <label for="mensaje" class="block font-semibold text-navy-800 mb-2">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required
+               class="w-full border-2 border-sage-200 rounded-xl px-4 py-3 bg-white transition-shadow resize-none"
+               placeholder="Cuéntame brevemente qué te gustaría lograr, o si prefieres agendar una hora directamente..."></textarea>
+      </div>
+      <button id="formSubmitBtn" type="submit" class="btn-cta bg-navy-700 btn-cta-navy text-cream-50 font-semibold px-8 py-4 rounded-full justify-self-start flex items-center gap-3">
+        <span id="btnText">Enviar mensaje</span>
+      </button>
+      <p id="formSuccess" class="hidden text-sage-700 font-medium">¡Gracias! Tu mensaje fue enviado. Cristóbal lo revisará y te contactará pronto.</p>
+      <p id="formError" class="hidden text-clay-700 font-medium">Hubo un problema al enviar tu mensaje. Intenta nuevamente o escríbenos directo por Instagram.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-navy-800 text-cream-100-80 pt-16 pb-8">
+  <div class="max-w-7xl mx-auto px-6 lg-px-10 grid md-grid-cols-3 gap-10 mb-12">
+    <div>
+      <div class="flex items-center gap-3 mb-3">
+        <img src="img/nutrifit-logo-oscuro.png" alt="Nutrifit" class="w-9 h-9" style="border-radius:50%;">
+        <p class="font-display text-2xl font-semibold text-cream-50">Nutrifit</p>
+      </div>
+      <p class="text-sm max-w-xs">Nutrición clínica y deportiva con Cristóbal Díaz. Acompañamiento personalizado para una salud real y sostenible.</p>
+    </div>
+    <div>
+      <p class="font-semibold text-cream-50 mb-3">Navegación</p>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#sobre-mi" class="hover-text-clay-300 transition-colors">Sobre mí</a></li>
+        <li><a href="#servicios" class="hover-text-clay-300 transition-colors">Servicios</a></li>
+        <li><a href="#testimonios" class="hover-text-clay-300 transition-colors">Testimonios</a></li>
+        <li><a href="#contacto" class="hover-text-clay-300 transition-colors">Contacto</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="font-semibold text-cream-50 mb-3">Redes sociales</p>
+      <div class="flex gap-4">
+        <a href="#" class="hover-text-clay-300 transition-colors" aria-label="Instagram">Instagram</a>
+        <a href="#" class="hover-text-clay-300 transition-colors" aria-label="LinkedIn">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+  <div class="border-t border-cream-100-10 pt-6 text-center text-xs text-cream-100-50">
+    © 2026 Nutrifit — Cristóbal Díaz. Todos los derechos reservados.
+  </div>
+</footer>
+
+<!-- ============ SCRIPTS ============ -->
+<!-- Librería de animaciones al hacer scroll -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<!-- Nuestro JS propio -->
+<script src="script.js"></script>
+
+</body>
+</html>
